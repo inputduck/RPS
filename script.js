@@ -1,4 +1,6 @@
-function rps(p1, p2) {
+//This is the JS only version of the script. Needs to be modified to make it work with buttons and HTML.
+
+/*function rps(p1, p2) {
     if (p1 === p2) {
         return 'Draw!';
     } else if (p1 == 'rock') {
@@ -29,4 +31,4 @@ function rps(p1, p2) {
                 break;
         }
     }
-}
+} */
