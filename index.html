@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/script.js"></script>
-    <link src="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <button>ROCK</button>
-    <button>PAPER</button>
-    <button>SCISSORS</button>
-    <section id="scores">
-        <h2>SCORES</h2>
-        <section>Player 1</section>
-        <section>Player 2</section>
+    <main>
+        <section id="game">
+            <h1>Rock Paper Scissors</h1>
+            <section id="display">
 
-        
-    </section>
-    <button>Reset scores</button>
+            </section>
+            <section id="buttons">
+                <button class="choice_btn">ROCK</button>
+                <button class="choice_btn">PAPER</button>
+                <button class="choice_btn">SCISSORS</button>
+            </section>
+        </section>
+        <section id="scores">
+            <h2>SCORES</h2>
+            <section id="both_players">
+                <section class="player">Player 1</section>
+                <section class="player">Player 2</section>
+            </section> 
+            
+            <button>Reset scores</button>
+        </section>
+    
+    </main>
 </body>
 </html>
