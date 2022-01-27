@@ -1,5 +1,18 @@
 //This is the JS only version of the script. Needs to be modified to make it work with buttons and HTML.
 
+function rock() {
+console.log('Rock was clicked');
+}
+
+function paper() {
+    console.log('Paper was clicked');
+}
+
+function scissors() {
+    console.log('Scissors was clicked');
+}
+
+
 /*function rps(p1, p2) {
     if (p1 === p2) {
         return 'Draw!';

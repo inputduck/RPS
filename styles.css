@@ -6,46 +6,6 @@ body {
 main {
     width: 80vw;
     margin: 0 auto;
-
+    background-color: #AAB;
 }
 
-#game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#display {
-    min-height: 70vh;
-    display: flex;
-    
-}
-#player1_display {
-    border-right: 5px solid black;
-}
-
-#player2_display {
-    border-left: 5px solid black;
-}
-
-.player_display {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-width: 33vw;
-}
-
-.choice_btn {
-    max-width: 70%;
-    text-overflow: none;
-    
-}
-
-#scores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 0px;
-}
