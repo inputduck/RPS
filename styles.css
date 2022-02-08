@@ -1,11 +1,44 @@
 body {
-    background-color: #ABA;
+    background-color: #42baffe0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 main {
-    width: 80vw;
-    margin: 0 auto;
-    background-color: #AAB;
+    box-sizing: border-box;
+    width: 60vw;
+    
+    margin-top: 100px;
+    background-color: #bee7ff;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
 }
 
+
+#btns {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+
+.move-btn {
+    background-color: #42baff;
+    color: #bee7ff;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+
+}
