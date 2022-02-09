@@ -1,4 +1,4 @@
-A very basic implementation of Rock Paper Scissors. 
+# A very basic implementation of Rock Paper Scissors
 
 Complete version will include:
 
