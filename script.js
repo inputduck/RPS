@@ -1,6 +1,8 @@
 let num
 let choice = '';
 let compChoice = '';
+let slogans = ['Do we go on 3...or after 3?', 'You go first', 'Which one is scissors again?', 'What? No Spock button?', 'I promise to pick paper this time', 'Hi Tori', 'No Cheating', 'Best of three?', 'What is this human emotion you call "Vengeance"?','You will soon be travelling negatively along the y-axis', 'RNG stabilisers are active', 'Have you ever met my brother HAL?' ]
+
 
 
 function rock() {
@@ -17,6 +19,13 @@ function scissors() {
     choice = 'scissors';
     compMove('scissors')
 }
+
+function sloganDisplay() {
+    let sloganChoice = Math.floor(Math.random() * slogans.length);
+    document.getElementById("message-el").innerText = slogans[sloganChoice];
+    console.log(sloganChoice);
+}
+
 
 function compMove() {
     let num = Math.floor(Math.random() * 3);
@@ -35,35 +44,36 @@ function compMove() {
     
 function rps(choice, compChoice) {
     if (choice === compChoice) {
-        document.getElementById("message-el").innerText = `Computer picked ${compChoice}. Draw!`;
+        document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nIt's a Draw!`;
     } else if (choice == 'rock') {
         switch (compChoice) {
             case 'paper':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice}. Computer wins!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nComputer wins!`;
                 break;
             case 'scissors':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice} You win!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nYou win!`;
                 break;
         }
     } else if (choice == 'paper') {
         switch (compChoice) {
             case 'rock':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice} You win!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nYou win!`;
                 break;
             case 'scissors':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice}. Computer wins!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nComputer wins!`;
                 break;
         }
     } else if (choice == 'scissors') {
         switch (compChoice) {
             case 'rock':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice} Computer wins!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nComputer wins!`;
                 break;
             case 'paper':
-                document.getElementById("message-el").innerText = `Computer picked ${compChoice} You win!`;
+                document.getElementById("message-el").innerText = `Computer picked ${compChoice}.` + `\nYou win!`;
                 break;
         }
     }
+    
 }
 
 
