@@ -2,7 +2,7 @@ let num
 let choice = '';
 let compChoice = '';
 
-let slogans = ['Do we go on 3...or after 3?', 'You go first', 'Which one is scissors again?', 'What? No Spock button?', 'I promise to pick paper this time', 'Hi Tori', 'No Cheating', 'Best of three?', 'What is this human emotion you call "Vengeance"?','You will soon be travelling negatively along the y-axis', 'RNG stabilisers are active', 'Have you ever met my brother HAL?' ]
+let slogans = ['Do we go on 3...or after 3?', 'You go first', 'Which one is scissors again?', 'What? No Spock button?', 'I promise to pick paper this time', 'Hi Tori', 'No Cheating', 'Best of three?', 'What is... "Vengeance"?','You will soon be moving negatively along the y-axis', 'RNG stabilisers are active', 'Have you met my dad HAL?','Do you feel lucky, human?','' ]
 
 
 
@@ -26,10 +26,7 @@ function gameInit() {
     document.getElementById('scissors_btn').style.display = "inline";
     document.getElementById('resultsMessage').style.display = "none";
     playAgainButton.style.display = "none";
-    //movesDisplay.style.visibility = "hidden";
-    
-    
-    
+
     
 }
 
@@ -40,12 +37,9 @@ function sloganDisplay() {
 }
 
 function moveSelect(choice) {
+   
     document.getElementById('sloganDisplay').style.display = "none";
     document.getElementById('instruction').style.display = "none";
-    
-    console.log(choice)
-   // movesDisplay.style.visibility = "visible"
-    //p1MoveText.textContent = choice
     compMove(choice)
 }
 
@@ -75,9 +69,7 @@ function compMove(choice) {
 }
     
 function rps(choice, compChoice) {
-//      playAgainButton.style.display = "inline";
-//      movesDisplay.style.display = "inline";
-//      movesMessage.style.display = "inline";
+
 document.getElementById('resultsMessage').style.display = "inline";
     if (choice === compChoice) {
         
@@ -112,7 +104,7 @@ document.getElementById('resultsMessage').style.display = "inline";
                 gameFinish()
                 break;
             case 'paper':
-                document.getElementById("resultsMessage").innerText = `Computer picked ${compChoice}.` + `\n\nsYou win!`;
+                document.getElementById("resultsMessage").innerText = `Computer picked ${compChoice}.` + `\n\nYou win!`;
                 gameFinish()
                 break;
         }
@@ -127,7 +119,7 @@ function gameFinish() {
     //rockButton.style.display = "none";
 
     playAgainButton.style.display = "inline"
-    console.log('game finished')
+   
 
 
 }
