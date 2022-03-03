@@ -1,19 +1,11 @@
 # A very basic implementation of Rock Paper Scissors
 
-## Alpha version complete - 09/02/2022
+## Full version complete - 03/03/2022
 
 1. Buttons work
-2. Title displays correctly
-3. Design is responsive (sort of)
-4. One hilarious slogan is presented on page load
+2. Design is responsive (sort of)
+3. A different outrageous slogan is presented on each page load
+4. Dystopian background installed
+5. Move buttons replaced with play again button once round is over
 
-I am still working on it as we speak, so this is very much not a finished version. I just wanted to have a definitely completed start point. It's going to be much more involved as it goes on. Probably more involved than paper rock scissors needs to be. But it's my project and I'm having fun.
-
-Complete version will include:
-
-1. Graphics for each move
-2. Animated things
-3. Scores
-4. A reset button
-5. A different slogan for each round
-6. Mobile friendly
+I am calling this one complete. It's as close to how I imagined it as I can get right now short of learning how to make wireframe animations like the old hitchikers guide to the galaxy TV series. The stuff I didn't implement is all stuff that I didn't need. I am happy with the sleek (sleek for nightmare future dystopia, anyway) look and feel of it. I don't think it needs anything else to make it complete.
